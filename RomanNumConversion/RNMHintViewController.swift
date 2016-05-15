@@ -69,21 +69,4 @@ class RNMHintViewController: UIViewController,UICollectionViewDelegate,UICollect
         let size : CGSize  = CGSizeMake(100, 60)
         return size
     }
-    
-//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator)
-//    {
-//        let layout : UICollectionViewFlowLayout = colletionView?.collectionViewLayout as! UICollectionViewFlowLayout
-//        layout.scrollDirection=size.width > size.height ? UICollectionViewScrollDirection.Horizontal : UICollectionViewScrollDirection.Vertical
-//    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

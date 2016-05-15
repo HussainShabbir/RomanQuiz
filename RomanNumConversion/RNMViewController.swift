@@ -7,21 +7,28 @@
 //
 
 import UIKit
+import StoreKit
+import MessageUI
 
-class RNMViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    @IBOutlet weak var firstButton : UIButton?
-    @IBOutlet weak var secondButton : UIButton?
-    @IBOutlet weak var thirdButton : UIButton?
-    @IBOutlet weak var fourthButton : UIButton?
+class RNMViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,MFMailComposeViewControllerDelegate {
+    @IBOutlet weak var easyBtn : UIButton?
+    @IBOutlet weak var mediumBtn : UIButton?
+    @IBOutlet weak var hardBtn : UIButton?
+    @IBOutlet weak var hintBtn : UIButton?
+    @IBOutlet weak var shareBtn : UIButton?
+    @IBOutlet weak var rateUsBtn : UIButton?
+    @IBOutlet weak var feedBackBtn : UIButton?
     
     var buttonTitle : String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.firstButton?.layer.cornerRadius = 5.0
-        self.secondButton?.layer.cornerRadius = 5.0
-        self.thirdButton?.layer.cornerRadius = 5.0
-        self.fourthButton?.layer.cornerRadius = 5.0
+        self.easyBtn?.layer.cornerRadius = 5.0
+        self.mediumBtn?.layer.cornerRadius = 5.0
+        self.hardBtn?.layer.cornerRadius = 5.0
+        self.hintBtn?.layer.cornerRadius = 5.0
+        self.shareBtn?.layer.cornerRadius = 5.0
+        self.rateUsBtn?.layer.cornerRadius = 5.0
+        self.feedBackBtn?.layer.cornerRadius = 5.0
         // Do any addvaronal setup after loading the view, typically from a nib.
     }
     
@@ -60,9 +67,76 @@ class RNMViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         self.buttonTitle = sender.titleLabel?.text
     }
     
+    @IBAction func doShare(sender : UIButton){
+        let texttoshare = kmsgToShareOnSociaL
+        var activityVC : UIActivityViewController? = nil
+        let activityProvider1 = WFActivitySpecificItemProvider(placeholderItem: [WFActivitySpecificItemProviderTypeDefault : texttoshare, UIActivityTypePostToFacebook : texttoshare, UIActivityTypePostToTwitter : texttoshare, UIActivityTypeMessage : texttoshare])
+        
+        let activityProvider2 = WFActivitySpecificItemProvider(placeholderItem: nil, block : {(activityType) -> AnyObject! in
+            if (activityType == kWhatsAppUrl){
+                activityVC?.dismissViewControllerAnimated(false, completion: nil)
+                let msg = kWhatsAppMsg
+                let url = NSURL(string: msg)
+                UIApplication.sharedApplication().openURL(url!)
+            }
+            return texttoshare
+        })
+        activityVC = UIActivityViewController(activityItems: [activityProvider1, activityProvider2], applicationActivities: nil)
+        activityVC!.excludedActivityTypes = [UIActivityTypeAddToReadingList,UIActivityTypeCopyToPasteboard,UIActivityTypePostToFlickr,UIActivityTypePostToWeibo,UIActivityTypeAssignToContact,UIActivityTypePostToVimeo,UIActivityTypePostToTencentWeibo,UIActivityTypePrint,UIActivityTypeSaveToCameraRoll,UIActivityTypeAirDrop]
+
+        self.presentViewController(activityVC!, animated: true, completion: nil)
+
+        
+    }
+    
+    
+    @IBAction func doRateUs(sender : UIButton)
+    {
+        let appUrl = NSURL(string: kItunesAppUrl)
+        UIApplication.sharedApplication().openURL(appUrl!)
+    }
+    
+    @IBAction func giveFeedBack(sender : UIButton){
+        if MFMailComposeViewController.canSendMail(){
+        let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setSubject(kAppNm)
+            mail.setToRecipients([kFeedBackEml])
+            self.presentViewController(mail, animated: true, completion: {
+            })
+        }
+        else{
+            print(kMailAppErr)
+        }
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?){
+        switch result{
+        case MFMailComposeResultSent:
+            self.dismissViewControllerAnimated(true, completion: { 
+                controller.dismissViewControllerAnimated(true, completion: nil)
+            })
+        case MFMailComposeResultSaved:
+            self.dismissViewControllerAnimated(true, completion: {
+                controller.dismissViewControllerAnimated(true, completion: nil)
+            })
+        case MFMailComposeResultCancelled:
+            self.dismissViewControllerAnimated(true, completion: {
+                controller.dismissViewControllerAnimated(true, completion: nil)
+            })
+        default:
+            print(kMailSentFailed)
+        }
+    }
+    
+    func productViewControllerDidFinish(viewController : SKStoreProductViewController){
+        viewController.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destinationVwController : RNMQuizViewController = segue.destinationViewController as? RNMQuizViewController{
         destinationVwController.itemName(self.buttonTitle!)
         }
     }
+    
 }

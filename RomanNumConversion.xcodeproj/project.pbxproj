@@ -17,8 +17,11 @@
 		970404051CC34B3D00E95288 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970404031CC34B3D00E95288 /* Constants.swift */; };
 		970404061CC34B3D00E95288 /* RNMCustomInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970404041CC34B3D00E95288 /* RNMCustomInputTableViewCell.swift */; };
 		970404081CC4C0D700E95288 /* RNMQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970404071CC4C0D700E95288 /* RNMQuizViewController.swift */; };
+		9770BEBD1CE5B0F8005587C0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9770BEBC1CE5B0F8005587C0 /* StoreKit.framework */; };
+		9780A9461CE83D57003F45BB /* WFActivitySpecificItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9780A9451CE83D57003F45BB /* WFActivitySpecificItemProvider.m */; };
 		979FC3E91CC5D4C700F06AD4 /* RNMHintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FC3E81CC5D4C700F06AD4 /* RNMHintViewController.swift */; };
 		979FC3EB1CC5DDA200F06AD4 /* RNMColVwCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979FC3EA1CC5DDA200F06AD4 /* RNMColVwCell.swift */; };
+		97FDCB6C1CE6E09300B8F0BA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FDCB6B1CE6E09300B8F0BA /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +58,13 @@
 		970404031CC34B3D00E95288 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		970404041CC34B3D00E95288 /* RNMCustomInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMCustomInputTableViewCell.swift; sourceTree = "<group>"; };
 		970404071CC4C0D700E95288 /* RNMQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMQuizViewController.swift; sourceTree = "<group>"; };
+		9770BEBC1CE5B0F8005587C0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9780A9431CE83D57003F45BB /* RomanNumConversion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RomanNumConversion-Bridging-Header.h"; sourceTree = "<group>"; };
+		9780A9441CE83D57003F45BB /* WFActivitySpecificItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFActivitySpecificItemProvider.h; sourceTree = "<group>"; };
+		9780A9451CE83D57003F45BB /* WFActivitySpecificItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFActivitySpecificItemProvider.m; sourceTree = "<group>"; };
 		979FC3E81CC5D4C700F06AD4 /* RNMHintViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMHintViewController.swift; sourceTree = "<group>"; };
 		979FC3EA1CC5DDA200F06AD4 /* RNMColVwCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNMColVwCell.swift; sourceTree = "<group>"; };
+		97FDCB6B1CE6E09300B8F0BA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97FDCB6C1CE6E09300B8F0BA /* MessageUI.framework in Frameworks */,
+				9770BEBD1CE5B0F8005587C0 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +100,7 @@
 				970403D41CC3447500E95288 /* RomanNumConversion */,
 				970403E91CC3447500E95288 /* RomanNumConversionTests */,
 				970403F41CC3447500E95288 /* RomanNumConversionUITests */,
+				97FDCB6A1CE6DFA100B8F0BA /* Framework */,
 				970403D31CC3447500E95288 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 		970403D41CC3447500E95288 /* RomanNumConversion */ = {
 			isa = PBXGroup;
 			children = (
+				9780A9471CE844C9003F45BB /* WatsAppActivity */,
 				970404031CC34B3D00E95288 /* Constants.swift */,
 				970404041CC34B3D00E95288 /* RNMCustomInputTableViewCell.swift */,
 				970403D51CC3447500E95288 /* RNMAppDelegate.swift */,
@@ -138,6 +150,25 @@
 				970403F71CC3447500E95288 /* Info.plist */,
 			);
 			path = RomanNumConversionUITests;
+			sourceTree = "<group>";
+		};
+		9780A9471CE844C9003F45BB /* WatsAppActivity */ = {
+			isa = PBXGroup;
+			children = (
+				9780A9441CE83D57003F45BB /* WFActivitySpecificItemProvider.h */,
+				9780A9451CE83D57003F45BB /* WFActivitySpecificItemProvider.m */,
+				9780A9431CE83D57003F45BB /* RomanNumConversion-Bridging-Header.h */,
+			);
+			name = WatsAppActivity;
+			sourceTree = "<group>";
+		};
+		97FDCB6A1CE6DFA100B8F0BA /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				97FDCB6B1CE6E09300B8F0BA /* MessageUI.framework */,
+				9770BEBC1CE5B0F8005587C0 /* StoreKit.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +239,7 @@
 				TargetAttributes = {
 					970403D11CC3447500E95288 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2BXUTGK34K;
 					};
 					970403E51CC3447500E95288 = {
 						CreatedOnToolsVersion = 7.3;
@@ -273,6 +305,7 @@
 			files = (
 				979FC3EB1CC5DDA200F06AD4 /* RNMColVwCell.swift in Sources */,
 				970404081CC4C0D700E95288 /* RNMQuizViewController.swift in Sources */,
+				9780A9461CE83D57003F45BB /* WFActivitySpecificItemProvider.m in Sources */,
 				970403D81CC3447500E95288 /* RNMViewController.swift in Sources */,
 				970404061CC34B3D00E95288 /* RNMCustomInputTableViewCell.swift in Sources */,
 				979FC3E91CC5D4C700F06AD4 /* RNMHintViewController.swift in Sources */,
@@ -350,8 +383,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -373,7 +406,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "00348156-2710-4f2e-85d5-a1861293c949";
+				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,8 +431,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -414,7 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "00348156-2710-4f2e-85d5-a1861293c949";
+				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -425,13 +458,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
 				INFOPLIST_FILE = RomanNumConversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HussainCode.RomanNumConversion;
 				PRODUCT_NAME = "Roman Quiz";
-				PROVISIONING_PROFILE = "00348156-2710-4f2e-85d5-a1861293c949";
+				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				SWIFT_OBJC_BRIDGING_HEADER = "RomanNumConversion/RomanNumConversion-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -439,13 +476,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
 				INFOPLIST_FILE = RomanNumConversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HussainCode.RomanNumConversion;
 				PRODUCT_NAME = "Roman Quiz";
-				PROVISIONING_PROFILE = "00348156-2710-4f2e-85d5-a1861293c949";
+				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				SWIFT_OBJC_BRIDGING_HEADER = "RomanNumConversion/RomanNumConversion-Bridging-Header.h";
 			};
 			name = Release;
 		};
