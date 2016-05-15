@@ -83,8 +83,14 @@ class RNMViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         })
         activityVC = UIActivityViewController(activityItems: [activityProvider1, activityProvider2], applicationActivities: nil)
         activityVC!.excludedActivityTypes = [UIActivityTypeAddToReadingList,UIActivityTypeCopyToPasteboard,UIActivityTypePostToFlickr,UIActivityTypePostToWeibo,UIActivityTypeAssignToContact,UIActivityTypePostToVimeo,UIActivityTypePostToTencentWeibo,UIActivityTypePrint,UIActivityTypeSaveToCameraRoll,UIActivityTypeAirDrop]
-
-        self.presentViewController(activityVC!, animated: true, completion: nil)
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone){
+            self.presentViewController(activityVC!, animated: true, completion: nil)
+        }
+        else{
+            let popOver = UIPopoverController(contentViewController: activityVC!)
+            popOver.presentPopoverFromRect(self.shareBtn!.bounds, inView: self.shareBtn!, permittedArrowDirections: UIPopoverArrowDirection.Up, animated: true)
+        }
+        
 
         
     }
