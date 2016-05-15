@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "43687F3C8765A8CDDF3BA2AB20EE0C32E0053F86",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A1489BE66B2AF2623D4916A784722B4A396C68A1" : 0,
+    "43687F3C8765A8CDDF3BA2AB20EE0C32E0053F86" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E454B183-7B47-4C9C-AE36-62D2EB30F3F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A1489BE66B2AF2623D4916A784722B4A396C68A1" : "WFActivitySpecificItemProvider\/",
+    "43687F3C8765A8CDDF3BA2AB20EE0C32E0053F86" : "RomanQuiz\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RomanNumConversion",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RomanNumConversion.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HussainShabbir\/RomanQuiz.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43687F3C8765A8CDDF3BA2AB20EE0C32E0053F86"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wileywimberly\/WFActivitySpecificItemProvider.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1489BE66B2AF2623D4916A784722B4A396C68A1"
+    }
+  ]
+}
