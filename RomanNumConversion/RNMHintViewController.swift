@@ -57,7 +57,7 @@ class RNMHintViewController: UIViewController,UICollectionViewDelegate,UICollect
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
         
-        let cell : RNMColVwCell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionViewCell", forIndexPath: indexPath) as! RNMColVwCell
+        let cell : RNMColVwCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCollectionViewCell, forIndexPath: indexPath) as! RNMColVwCell
         let formatterValue = String(format: "%@ = %d", self.numerals[indexPath.row],self.values[indexPath.row]) as String
         cell.formattedLabel?.text = formatterValue
         cell.layer.cornerRadius = 5.0
