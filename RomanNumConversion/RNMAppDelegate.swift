@@ -16,11 +16,6 @@ class RNMAppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        guard UIDevice.currentDevice().systemVersion >= "8.0"
-            else
-        {
-            abort()
-        }
         return true
     }
 

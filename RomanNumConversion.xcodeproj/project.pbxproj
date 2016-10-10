@@ -239,7 +239,7 @@
 				TargetAttributes = {
 					970403D11CC3447500E95288 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 2BXUTGK34K;
+						DevelopmentTeam = WQF3745FDQ;
 					};
 					970403E51CC3447500E95288 = {
 						CreatedOnToolsVersion = 7.3;
@@ -383,8 +383,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -406,7 +406,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				PROVISIONING_PROFILE = "7a4e7ffa-52de-4f9e-8362-883608746a40";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -431,8 +431,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hussain Shabbir Hussain (WQF3745FDQ)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -447,7 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				PROVISIONING_PROFILE = "7a4e7ffa-52de-4f9e-8362-883608746a40";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -459,14 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RomanNumConversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HussainCode.RomanNumConversion;
 				PRODUCT_NAME = "Roman Quiz";
-				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RomanNumConversion/RomanNumConversion-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -477,14 +477,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hussain Shabbir Hussain (286VQAS9G5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RomanNumConversion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HussainCode.RomanNumConversion;
 				PRODUCT_NAME = "Roman Quiz";
-				PROVISIONING_PROFILE = "b6f4bb39-af93-4c78-899a-1ab3c747c4e6";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RomanNumConversion/RomanNumConversion-Bridging-Header.h";
 			};
 			name = Release;
