@@ -1,0 +1,3 @@
+This is the Puzzle Quiz app which contains the 60 random questions and every question contains the 4 options, it also contains the timer of 3 mins. It is very interesting and good for the brain storming. 
+
+In addition to this, it has three levels (Easy, Medium and Hard). Based on this levels question level will be change. It also improves the calculation problem efficiency by solving the same.
