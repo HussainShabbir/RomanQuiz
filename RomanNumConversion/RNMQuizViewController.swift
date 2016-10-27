@@ -169,24 +169,24 @@ class RNMQuizViewController: UIViewController {
             switch answerOption {
             case .firstOption:
                 self.firstOption?.setTitle(ansValue, forState: UIControlState.Normal)
-                self.secondOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
-                self.thirdOption?.setTitle(updateAnswerOption(3, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
-                self.fourOption?.setTitle(updateAnswerOption(4, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
+                self.secondOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
+                self.thirdOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: !shouldIncrement), forState: UIControlState.Normal)
+                self.fourOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
             case .secondOption:
                 self.secondOption?.setTitle(ansValue, forState: UIControlState.Normal)
                 self.firstOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
-                self.thirdOption?.setTitle(updateAnswerOption(3, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
-                self.fourOption?.setTitle(updateAnswerOption(4, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
+                self.thirdOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
+                self.fourOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: !shouldIncrement), forState: UIControlState.Normal)
             case .thirdOption:
                 self.thirdOption?.setTitle(ansValue, forState: UIControlState.Normal)
-                self.firstOption?.setTitle(updateAnswerOption(1, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
-                self.secondOption?.setTitle(updateAnswerOption(2, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
+                self.firstOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
+                self.secondOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: !shouldIncrement), forState: UIControlState.Normal)
                 self.fourOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
             case .fourthOption:
                 self.fourOption?.setTitle(ansValue, forState: UIControlState.Normal)
                 self.firstOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: shouldIncrement), forState: UIControlState.Normal)
-                self.secondOption?.setTitle(updateAnswerOption(2, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
-                self.thirdOption?.setTitle(updateAnswerOption(3, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
+                self.secondOption?.setTitle(updateAnswerOption(5, ansValue: ansValue,shouldIncrement: true), forState: UIControlState.Normal)
+                self.thirdOption?.setTitle(updateAnswerOption(10, ansValue: ansValue,shouldIncrement: !shouldIncrement), forState: UIControlState.Normal)
             }
         }
             validateResult()
